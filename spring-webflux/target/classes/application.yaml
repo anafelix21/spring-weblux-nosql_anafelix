@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: spring-webflux-nosql
+  data:
+    mongodb:
+      database: database_local
+      uri: mongodb://admin:admin12345@localhost:27017/database_local?authSource=admin
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    enabled: false
+    path: /swagger-ui.html
